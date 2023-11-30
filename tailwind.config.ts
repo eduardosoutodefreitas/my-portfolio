@@ -8,8 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-    
-    },
+      colors: {
+        primaryBlack: "#141414",
+        specialOrange: "#FF6200",
+        lightGray: "#4B4A4A"
+      }
+      },
   },
   plugins: [],
 }
