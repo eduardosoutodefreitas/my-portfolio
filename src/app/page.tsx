@@ -1,5 +1,9 @@
+import Hero from './components/sections/hero';
+
 export default function Home() {
   return (
-    <main>Herou Warudo</main>
-  )
+    <main>
+      <Hero />
+    </main>
+  );
 }
