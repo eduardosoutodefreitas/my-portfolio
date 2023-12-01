@@ -5,7 +5,9 @@ const AvailabilityCard = () => {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-specialOrange opacity-75"></span>
         <span className="relative inline-flex rounded-full h-3 w-3 bg-specialOrange"></span>
       </span>
-      <p className="">Disponível para novos desafios</p>
+      <p className="text-sm md:text-base lg:text-lg">
+        Disponível para novos desafios
+      </p>
     </div>
   );
 };

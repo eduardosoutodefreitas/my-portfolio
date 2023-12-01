@@ -3,16 +3,14 @@ import React from 'react';
 
 const HeroPicture = () => {
   return (
-    <div className="w-5/6 min-w-[250px] max-w-2xl pointer-events-none">
-      <Image
-        src={'/assets/images/hero.svg'}
-        alt="Hero Icon"
-        width={500}
-        height={500}
-        layout="responsive"
-        className="animate-float"
-      />
-    </div>
+    <Image
+      src={'/assets/images/hero.svg'}
+      alt="Hero Icon"
+      width={482}
+      height={598}
+      // fill
+      className="animate-float aspect-[492/598] w-4/6 min-w-[250px] max-w-2xl pointer-events-none"
+    />
   );
 };
 

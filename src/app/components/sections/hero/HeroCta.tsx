@@ -6,13 +6,13 @@ const HeroCta = () => {
   return (
     <div className="max-w-4xl flex flex-col items-center md:items-start text-center md:text-start gap-5">
       <AvailabilityCard />
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-black">
+      <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black">
         Eduardo Souto <br />
-        <span className="font-extrabold bg-gradient-to-r from-primaryBlack/95 to-slate-700 bg-clip-text text-transparent text-3xl md:text-5xl lg:text-6xl ">
+        <span className="font-extrabold bg-gradient-to-r from-primaryBlack/95 to-slate-700 bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-6xl ">
           Especialista Front End
         </span>
       </h1>
-      <p className="text-lightGray max-w-2xl lg:text-lg">
+      <p className="text-lightGray max-w-md md:max-w-xl text-sm md:text-base lg:text-lg">
         Sou um desenvolvedor front-end apaixonado por traduzir ideias em
         experiências digitais envolventes. Especializado em criar aplicações
         intuitivas e úteis, meu foco está em resolver problemas do mundo real e
