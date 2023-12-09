@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "framer-motion": "^10.16.16",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "react-wrap-balancer": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
