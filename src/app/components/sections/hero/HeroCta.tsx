@@ -1,6 +1,7 @@
 import AvailabilityCard from './AvailabilityCard';
 import Button from '../../Button/Button';
 import Socials from '../../Socials';
+import Balancer from 'react-wrap-balancer';
 
 const HeroCta = () => {
   return (
@@ -13,10 +14,12 @@ const HeroCta = () => {
         </span>
       </h1>
       <p className="text-lightGray max-w-md md:max-w-xl text-sm md:text-base lg:text-lg">
-        Sou um desenvolvedor front-end apaixonado por traduzir ideias em
-        experiências digitais envolventes. Especializado em criar aplicações
-        intuitivas e úteis, meu foco está em resolver problemas do mundo real e
-        desenvolver sites que fazem empresas brilharem online.
+        <Balancer>
+          Sou um desenvolvedor front-end apaixonado por traduzir ideias em
+          experiências digitais envolventes. Especializado em criar aplicações
+          intuitivas e úteis, meu foco está em resolver problemas do mundo real
+          e desenvolver sites que fazem empresas brilharem online.
+        </Balancer>
       </p>
       <div className="flex items-center md:justify-start gap-5 mb-8">
         <Button>Contratar</Button>
