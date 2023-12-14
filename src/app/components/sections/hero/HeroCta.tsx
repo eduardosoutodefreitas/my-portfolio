@@ -30,7 +30,6 @@ const HeroCta = () => {
           Ver projetos
         </a>
       </div>
-      <Socials />
     </div>
   );
 };
