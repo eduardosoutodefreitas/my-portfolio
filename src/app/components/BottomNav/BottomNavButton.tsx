@@ -23,8 +23,10 @@ const BottomNavButton = ({
           });
         }
       }}
-      className={`rounded-full flex flex-col items-center gap-1 text-white p-2 transition-all duration-250 ${
-        id === activeSection ? 'text-orange-600 text-base' : 'text-sm'
+      className={`rounded-full flex flex-col items-center gap-1  p-2 transition-all duration-250 ${
+        id === activeSection
+          ? 'text-orange-600 text-base'
+          : 'text-sm text-white'
       }`}
     >
       {icon}
