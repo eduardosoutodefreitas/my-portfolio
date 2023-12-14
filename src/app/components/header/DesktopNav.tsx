@@ -1,20 +1,18 @@
-import React from 'react';
-import { BiMessageRoundedDetail } from 'react-icons/bi';
-import Button from '../Button/Button';
-import NavbarLinks from './NavbarLinks';
+import sections from '@/constants/Sections';
+import { NavbarContent, NavbarItem } from '@nextui-org/react';
+import Link from 'next/link';
 
 const DesktopNav = () => {
   return (
-    <>
-      <nav className="hidden md:block">
-        <NavbarLinks direction="row" extraStyles="items-center" />
-      </nav>
-      <div className="hidden md:block">
-        <Button>
-          <BiMessageRoundedDetail size={20} /> Entre em contato
-        </Button>
-      </div>
-    </>
+    <NavbarContent className="hidden sm:flex gap-5" justify="center">
+      {sections.map((section) => (
+        <NavbarItem key={section.id}>
+          <Link color="foreground" href={section.id}>
+            {section.label}
+          </Link>
+        </NavbarItem>
+      ))}
+    </NavbarContent>
   );
 };
 
