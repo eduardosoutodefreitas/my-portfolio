@@ -36,7 +36,7 @@ const BottomNav = () => {
   }, []); // O array vazio como segundo argumento faz com que o efeito só seja executado uma vez, semelhante a componentDidMount
 
   return (
-    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 bg-primaryBlack w-screen rounded-t-3xl py-1 flex justify-around items-center md:hidden">
+    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 bg-primaryBlack w-screen rounded-t-3xl px-5 py-1 flex justify-around items-center md:hidden">
       {sections.map(({ id, label, icon }) => (
         <BottomNavButton
           label={label}
