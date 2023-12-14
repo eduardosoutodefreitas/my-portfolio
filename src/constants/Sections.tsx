@@ -6,10 +6,10 @@ import {
 } from 'react-icons/io5';
 
 const sections = [
-  { id: '#home', label: 'Home', icon: <IoHome /> },
-  { id: '#about', label: 'About', icon: <IoPerson /> },
-  { id: '#services', label: 'Services', icon: <IoCodeSlash /> },
-  { id: '#contact', label: 'Contact', icon: <IoChatboxEllipses /> },
+  { id: '#home', label: 'Início', icon: <IoHome /> },
+  { id: '#about', label: 'Sobre mim', icon: <IoPerson /> },
+  { id: '#projects', label: 'Projetos', icon: <IoCodeSlash /> },
+  { id: '#contact', label: 'Contato', icon: <IoChatboxEllipses /> },
 ];
 
 export default sections;
