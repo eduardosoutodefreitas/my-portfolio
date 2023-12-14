@@ -1,15 +1,34 @@
-import DesktopNav from './DesktopNav';
+import React from 'react';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+} from '@nextui-org/react';
+import { IoChatboxEllipses } from 'react-icons/io5';
+
 import Logo from './Logo';
-import MobileNav from './MobileNav';
+import Button from '../Button/Button';
+import DesktopNav from './DesktopNav';
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="flex justify-between items-center px-5 h-[80px] md:px-10 lg:px-16 z-30 relative">
-      <Logo />
+    <Navbar
+      className="backdrop-blur-sm bg-transparent py-2"
+      shouldHideOnScroll
+      maxWidth="2xl"
+    >
+      <NavbarBrand>
+        <Logo />
+      </NavbarBrand>
       <DesktopNav />
-      <MobileNav />
-    </header>
+      <NavbarContent justify="end">
+        <NavbarItem>
+          <Button extraStyles="flex items-center gap-2">
+            <IoChatboxEllipses size={20} /> Entre em contato!
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
   );
-};
-
-export default Header;
+}
