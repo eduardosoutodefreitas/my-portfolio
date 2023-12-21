@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf-export": "contentful space export --config contentful/export-config.json --management-token CFPAT-vSF9RZ3VrnY3OlT5Vu4nHX4r8TNN0AK4ChDtoooeF_Q --space-id g6nnyc2v412y",
+    "cf-generate-types": "cf-content-types-generator contentful/export.json --out types/contentful"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
+    "contentful": "^10.6.14",
     "framer-motion": "^10.16.16",
     "next": "14.0.3",
     "react": "^18",
@@ -22,6 +25,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cf-content-types-generator": "^2.13.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "eslint-config-prettier": "^9.0.0",
