@@ -1,4 +1,4 @@
-import type { Asset, Entry, EntryFields } from 'contentful';
+import type { Asset, EntryFields } from 'contentful';
 
 export interface TypeProjectFields {
   name: EntryFields.Symbol;
