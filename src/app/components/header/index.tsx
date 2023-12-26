@@ -14,7 +14,7 @@ import DesktopNav from './DesktopNav';
 export default function Header() {
   return (
     <Navbar
-      className="backdrop-blur-sm bg-transparent py-2"
+      className="backdrop-blur-sm bg-transparent py-2 absolute top-0 left-0 right-0"
       shouldHideOnScroll
       maxWidth="2xl"
     >
