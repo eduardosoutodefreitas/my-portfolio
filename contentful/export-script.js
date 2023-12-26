@@ -4,10 +4,10 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
+const managementToken = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
 const spaceId = process.env.CONTENTFUL_SPACE_ID;
 
-const command = `contentful space export --config contentful/export-config.json --management-token ${accessToken} --space-id ${spaceId}`;
+const command = `contentful space export --config contentful/export-config.json --management-token ${managementToken} --space-id ${spaceId}`;
 
 exec(command, (error, stdout, stderr) => {
   if (error) {
