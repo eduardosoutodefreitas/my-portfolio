@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cf-export": "node src/lib/contentful/script.js",
+    "cf-export": "node contentful/export-script.js",
     "cf-generate-types": "cf-content-types-generator contentful/export.json --out types/contentful"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "contentful": "^10.6.14",
+    "contentful-cli": "^3.1.33",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.16.16",
     "next": "14.0.3",
     "react": "^18",
