@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cf-export": "contentful space export --config contentful/export-config.json --management-token CFPAT-vSF9RZ3VrnY3OlT5Vu4nHX4r8TNN0AK4ChDtoooeF_Q --space-id g6nnyc2v412y",
+    "cf-export": "node src/lib/contentful/script.js",
     "cf-generate-types": "cf-content-types-generator contentful/export.json --out types/contentful"
   },
   "dependencies": {
