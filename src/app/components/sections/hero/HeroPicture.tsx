@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import hero from '/public/assets/images/hero.png';
 const HeroPicture = () => {
   return (
     <Image
-      src={hero}
+      src={'/assets/images/hero.png'}
       alt="Hero Icon"
       width={500}
       height={500}
