@@ -31,9 +31,8 @@ const AboutInfos = () => {
         <p>
           <Balancer>
             Eu me chamo <b>Eduardo Souto de Freitas</b> e moro no Rio de
-            Janeiro. Tenho 3 cachorros incríveis, um grandão peludo, um ruivo
-            que aprendeu a abrir portas e uma velhinha de 13 anos super
-            energética.
+            Janeiro, em Maricá. Sou apaixonado por cachorros e tenho 3 pets
+            maravilhosos (um deles até aprendeu a abrir portas).
           </Balancer>
         </p>
         <br />
@@ -41,9 +40,8 @@ const AboutInfos = () => {
           <Balancer>
             Antes de começar minha jornada com programação, eu era um
             concurseiro focado no concurso da ESA. Em outubro de 2021, realizei
-            a prova e <b>fui aprovado</b> e classificado para seguir para as
-            próximas etapas. Objetivo atingido, vitória, mas não era o que eu de
-            fato queria.
+            a prova e <b>fui aprovado</b> e classificado. Objetivo atingido,
+            vitória, mas não era o que eu de fato queria.
           </Balancer>
         </p>
         <br />
