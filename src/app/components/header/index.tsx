@@ -5,28 +5,24 @@ import {
   NavbarContent,
   NavbarItem,
 } from '@nextui-org/react';
-import { IoChatboxEllipses } from 'react-icons/io5';
 
 import Logo from './Logo';
-import Button from '../Button/Button';
-import DesktopNav from './DesktopNav';
+import ContactButton from './ContactButton';
 
 export default function Header() {
   return (
     <Navbar
-      className="backdrop-blur-sm bg-transparent py-2 absolute top-0 left-0 right-0"
+      className="bg-transparent py-2 absolute top-0 left-0 right-0"
       shouldHideOnScroll
+      isBlurred={false}
       maxWidth="2xl"
     >
       <NavbarBrand>
         <Logo />
       </NavbarBrand>
-      <DesktopNav />
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button extraStyles="flex items-center gap-2">
-            <IoChatboxEllipses size={20} /> Entre em contato!
-          </Button>
+          <ContactButton />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
