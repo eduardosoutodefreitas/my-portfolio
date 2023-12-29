@@ -1,5 +1,6 @@
 'use client';
 import { NextUIProvider } from '@nextui-org/react';
+import { Toaster } from 'react-hot-toast';
 import { Provider } from 'react-wrap-balancer';
 
 interface AppProviderProps {
@@ -9,7 +10,18 @@ interface AppProviderProps {
 const AppProvider = ({ children }: AppProviderProps) => {
   return (
     <NextUIProvider>
-      <Provider>{children}</Provider>
+      <Provider>
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              borderRadius: '10px',
+            },
+          }}
+        />
+        {children}
+      </Provider>
     </NextUIProvider>
   );
 };
