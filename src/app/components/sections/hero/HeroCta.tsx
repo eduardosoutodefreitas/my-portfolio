@@ -1,6 +1,5 @@
 import AvailabilityCard from './AvailabilityCard';
 import Button from '../../Button/Button';
-import Socials from '../../Socials';
 import Balancer from 'react-wrap-balancer';
 
 const HeroCta = () => {
@@ -8,11 +7,11 @@ const HeroCta = () => {
     <div className="max-w-4xl flex flex-col items-center md:items-start text-center md:text-start gap-5">
       <AvailabilityCard />
       <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black">
-        Eduardo Souto <br />
-        <span className="font-extrabold bg-gradient-to-r from-primaryBlack/95 to-slate-700 bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-6xl ">
-          Especialista Front End
-        </span>
+        Eduardo Souto
       </h1>
+      <h2 className="font-extrabold bg-gradient-to-r from-primaryBlack/95 to-slate-700 bg-clip-text text-transparent text-2xl lg:text-5xl xl:text-6xl ">
+        Desenvolvedor Front End
+      </h2>
       <p className="text-lightGray max-w-md md:max-w-xl text-sm md:text-base lg:text-lg">
         <Balancer>
           Sou um desenvolvedor front-end apaixonado por traduzir ideias em
