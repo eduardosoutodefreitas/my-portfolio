@@ -19,13 +19,12 @@ const Contact = () => {
           responder rapidamente.
         </Balancer>
       </p>
-      <div className="max-w-2xl w-1/2 min-w-[270px] mx-auto grid grid-cols-2 grid-rows-2 place-items-start content-between gap-x-2 xs:gap-x-5 lg:gap-x-14 gap-y-5 my-10">
-        {socials.map((social) => (
+      <div className="max-w-2xl w-1/2 min-w-[270px] mx-auto grid grid-cols-2 grid-rows-2 place-items-start place-content-between gap-x-2 xs:gap-x-5 lg:gap-x-14 gap-y-5 my-10">
+        {socials.map((social, index) => (
           <ContactSocial
             key={social.name}
-            name={social.name}
-            url={social.url}
-            icon={social.icon}
+            social={social}
+            align={index % 2 === 0 ? 'start' : 'end'}
           />
         ))}
       </div>
