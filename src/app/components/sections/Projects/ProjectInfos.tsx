@@ -5,12 +5,14 @@ import ProjectStack from './ProjectStack';
 
 interface ProjectInfosProps {
   title: string;
+  id: string;
   description: string;
   repositoryUrl?: string;
   techStack: string[];
 }
 const ProjectInfos = ({
   title,
+  id,
   description,
   repositoryUrl,
   techStack,
@@ -23,7 +25,10 @@ const ProjectInfos = ({
         <p className="line-clamp-5 mt-3">{description}</p>
       </div>
       <div className="flex justify-between items-center w-full">
-        <Link href="" className="flex items-center gap-3 group font-semibold">
+        <Link
+          href={`/projects/${id}`}
+          className="flex items-center gap-3 group font-semibold"
+        >
           Ler mais
           <MdArrowRightAlt
             size={22}
