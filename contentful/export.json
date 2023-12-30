@@ -12,7 +12,7 @@
         "id": "project",
         "type": "ContentType",
         "createdAt": "2023-12-19T21:58:39.813Z",
-        "updatedAt": "2023-12-19T23:20:56.721Z",
+        "updatedAt": "2023-12-29T23:04:15.016Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2023-12-19T23:20:56.721Z",
+        "publishedVersion": 19,
+        "publishedAt": "2023-12-29T23:04:15.016Z",
         "firstPublishedAt": "2023-12-19T21:58:40.331Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 10,
+        "version": 20,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -57,22 +57,9 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
-        },
-        {
-          "id": "projectHighlight",
-          "name": "projectHighlight",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
         },
         {
           "id": "projectImages",
@@ -80,14 +67,12 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Link",
-            "validations": [
-            ],
+            "validations": [],
             "linkType": "Asset"
           }
         },
@@ -97,14 +82,12 @@
           "type": "Array",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false,
           "items": {
             "type": "Symbol",
-            "validations": [
-            ]
+            "validations": []
           }
         },
         {
@@ -113,8 +96,7 @@
           "type": "Text",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -124,8 +106,7 @@
           "type": "Symbol",
           "localized": false,
           "required": true,
-          "validations": [
-          ],
+          "validations": [],
           "disabled": false,
           "omitted": false
         },
@@ -135,16 +116,35 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
-          "validations": [
-          ],
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectHighlight",
+          "name": "projectHighlight",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "id",
+          "name": "id",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [],
           "disabled": false,
           "omitted": false
         }
       ]
     }
   ],
-  "tags": [
-  ],
+  "tags": [],
   "editorInterfaces": [
     {
       "sys": {
@@ -157,7 +157,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 20,
         "createdAt": "2023-12-19T21:58:40.537Z",
         "createdBy": {
           "sys": {
@@ -166,7 +166,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-12-19T23:20:57.652Z",
+        "updatedAt": "2023-12-29T23:04:15.917Z",
         "updatedBy": {
           "sys": {
             "id": "3ByM34a1VX4BNpKXtFZzjc",
@@ -196,11 +196,6 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "projectHighlight",
-          "widgetId": "assetLinkEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
           "fieldId": "projectImages",
           "widgetId": "assetGalleryEditor",
           "widgetNamespace": "builtin"
@@ -212,7 +207,7 @@
         },
         {
           "fieldId": "description",
-          "widgetId": "markdown",
+          "widgetId": "multipleLine",
           "widgetNamespace": "builtin"
         },
         {
@@ -224,6 +219,16 @@
           "fieldId": "repositoryUrl",
           "widgetId": "urlEditor",
           "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "projectHighlight",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "id",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     }
@@ -231,8 +236,7 @@
   "entries": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -245,7 +249,7 @@
         "id": "5uue64FTbB0HshKnfVZZAm",
         "type": "Entry",
         "createdAt": "2023-12-19T21:58:50.316Z",
-        "updatedAt": "2023-12-19T22:27:02.057Z",
+        "updatedAt": "2023-12-29T20:54:55.389Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -253,8 +257,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 66,
-        "publishedAt": "2023-12-19T22:27:02.057Z",
+        "publishedVersion": 96,
+        "publishedAt": "2023-12-29T20:54:55.389Z",
         "firstPublishedAt": "2023-12-19T22:27:02.057Z",
         "createdBy": {
           "sys": {
@@ -270,8 +274,8 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "publishedCounter": 1,
-        "version": 67,
+        "publishedCounter": 11,
+        "version": 97,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -279,8 +283,7 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -293,17 +296,15 @@
         "name": {
           "en-US": "Hooper Store"
         },
-        "projectHighlight": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "2NvnCSMmSyAia0KZCno52L"
-            }
-          }
-        },
         "projectImages": {
           "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "2NvnCSMmSyAia0KZCno52L"
+              }
+            },
             {
               "sys": {
                 "type": "Link",
@@ -329,7 +330,6 @@
         },
         "techStack": {
           "en-US": [
-            "Typescrit",
             "React JS",
             "Next.js",
             "Javascript",
@@ -337,24 +337,33 @@
             "Stripe",
             "React Hooks",
             "Tailwind CSS",
-            "Zustand"
+            "Zustand",
+            "Typescript"
           ]
         },
         "description": {
-          "en-US": "HooperStore é um e-commerce cuja ideia surgiu enquanto eu buscava por um tênis de basquete para comprar. Frente aos altos, pensei no quão interessante seria poder comprar artigos esportivos numa loja com preços mais acessíveis. Decidi, então, criar eu mesmo uma plataforma de compra de produtos esportivos focados no basquete. \n\nDurante o desenvolvimento, fui descobrindo e me aprimorando em tecnologias que ainda não havia utilizado, como o __Zustand__ e o __Next.js__. Um dos principais desafios foi como utilizar a __API do Stripe__ em conjunto com as __Route Handlers__ do Next.js."
+          "en-US": "HooperStore é um e-commerce originado da busca por um tênis de basquete mais acessível, motivando a criação de uma plataforma dedicada à compra de artigos esportivos para basquete.\n\nAo longo do desenvolvimento, explorei tecnologias como o Zustand e o Next.js, aprimorando meu conhecimento. Enfrentei desafios notáveis, especialmente ao integrar a API do Stripe com os Route Handlers do Next.js. "
         },
         "projectUrl": {
-          "en-US": "hooper-store.vercel.app"
+          "en-US": "https://hooper-store.vercel.app"
         },
         "repositoryUrl": {
           "en-US": "https://github.com/eduardosoutodefreitas/HooperStore"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5lNacncuGJ8d5LOx6tntvQ"
+            }
+          }
         }
       }
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -367,7 +376,7 @@
         "id": "3opIRDhVXb5u0jBuR7Py5H",
         "type": "Entry",
         "createdAt": "2023-12-19T22:27:19.014Z",
-        "updatedAt": "2023-12-19T23:11:50.901Z",
+        "updatedAt": "2023-12-24T00:10:01.108Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -375,8 +384,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 76,
-        "publishedAt": "2023-12-19T23:11:50.901Z",
+        "publishedVersion": 88,
+        "publishedAt": "2023-12-24T00:10:01.108Z",
         "firstPublishedAt": "2023-12-19T23:11:50.901Z",
         "createdBy": {
           "sys": {
@@ -392,8 +401,8 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "publishedCounter": 1,
-        "version": 77,
+        "publishedCounter": 5,
+        "version": 89,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -401,8 +410,7 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -415,17 +423,15 @@
         "name": {
           "en-US": "MealNu"
         },
-        "projectHighlight": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "5JHdBbwavJwklxHwRV07O3"
-            }
-          }
-        },
         "projectImages": {
           "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5JHdBbwavJwklxHwRV07O3"
+              }
+            },
             {
               "sys": {
                 "type": "Link",
@@ -453,20 +459,28 @@
           ]
         },
         "description": {
-          "en-US": "Seguindo a abordagem __Mobile First__ e os __Princípios SOLID__, MealNu é a solução que trouxe para um problema que testemunhei trabalhando como garçom freelancer. A comida do restaurante em que eu trabalhava era incrível, saborosa os pratos eram super bem apresentados. Entretanto, o cardápio não tinha fotos dos pratos, somente a descrição e os preços, faltando o estímulo visual, fator consideravelmente relevante para a persuasão e a decisão do cliente. \n\nDecidi criar uma aplicação em que os clientes do restaurante em questão pudessem ter acesso a todos os dados do produto, com páginas dinâmicas para cada prato, modo claro e escuro, opção de filtrar por categoria e campo de pesquisa que busca não somente o nome do produto, mas também qualquer palavra que possa aparecer na descrição da refeição.  "
+          "en-US": "Seguindo a abordagem Mobile First e os Princípios SOLID, MealNu é a solução que desenvolvi como garçom freelancer. Os pratos eram deliciosos e bem apresentados, mas o cardápio carecia de fotos, prejudicando o estímulo visual essencial para a decisão do cliente.\n\nDecidi criar o MealNu, uma aplicação que proporciona aos clientes acesso completo aos detalhes dos produtos. Cada prato possui sua página dinâmica, com opções de modo claro/escuro, filtragem por categoria e um campo de pesquisa abrangente que busca não apenas o nome, mas também palavras na descrição da refeição."
         },
         "projectUrl": {
           "en-US": "https://mealnu-lemon.vercel.app/"
         },
         "repositoryUrl": {
           "en-US": "https://github.com/eduardosoutodefreitas/MealNu"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3tLcuEP4PFsE70gY599Ogv"
+            }
+          }
         }
       }
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -479,7 +493,7 @@
         "id": "2crfaiAE8cuN3DVeTBrvwv",
         "type": "Entry",
         "createdAt": "2023-12-19T23:12:22.443Z",
-        "updatedAt": "2023-12-19T23:21:04.503Z",
+        "updatedAt": "2023-12-29T13:58:19.925Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -487,8 +501,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 37,
-        "publishedAt": "2023-12-19T23:21:04.503Z",
+        "publishedVersion": 52,
+        "publishedAt": "2023-12-29T13:58:19.925Z",
         "firstPublishedAt": "2023-12-19T23:21:04.503Z",
         "createdBy": {
           "sys": {
@@ -504,8 +518,8 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "publishedCounter": 1,
-        "version": 38,
+        "publishedCounter": 7,
+        "version": 53,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -513,8 +527,7 @@
             "id": "3ByM34a1VX4BNpKXtFZzjc"
           }
         },
-        "automationTags": [
-        ],
+        "automationTags": [],
         "contentType": {
           "sys": {
             "type": "Link",
@@ -526,15 +539,6 @@
       "fields": {
         "name": {
           "en-US": "CodeTech"
-        },
-        "projectHighlight": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6Fckudo7P8iV9lLDrK3fxg"
-            }
-          }
         },
         "projectImages": {
           "en-US": [
@@ -551,6 +555,13 @@
                 "linkType": "Asset",
                 "id": "19WOypshM4NZkQSHdp8xlF"
               }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6Fckudo7P8iV9lLDrK3fxg"
+              }
             }
           ]
         },
@@ -565,10 +576,19 @@
           ]
         },
         "description": {
-          "en-US": "Esse projeto foi um trabalho voluntário realizado para a agência CodeTech, no qual fiquei responsável por todas as etapas do desenvolvimento: Desde o design até a implementação das soluções em código.\n\nA parte mais interessante desse projeto foi a solução que eu trouxe para a forma de contato. Para fugir da tendência tradicional de simplesmente ter um formulário no final da landing page, resolvi implementar um formulário com animação de entrada e de saída, o qual é chamado quando o usuário clica em um dos botões de ação da página. Busquei implementar uma interface moderna e intuitiva, sem muita poluição na tela.  "
+          "en-US": "Este projeto voluntário para a startup CodeTech destacou minha responsabilidade em todas as etapas do desenvolvimento, do design à implementação do código.\n\nA parte mais interessante desse projeto envolveu a solução que implementei para a forma de contato. Em vez do convencional formulário no final da landing page, optei por criar um formulário com animações dinâmicas. Esse formulário é acionado quando o usuário clica em um dos botões de ação da página. Busquei proporcionar uma experiência única com uma interface moderna e intuitiva, mantendo a tela livre de excessos visuais. Clique em \"Ler mais\" para conhecer os detalhes dessa abordagem inovadora."
         },
         "projectUrl": {
           "en-US": "https://codetechbr.net.br/"
+        },
+        "projectHighlight": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4JGLwDHqC8O38qLGJ6uw8P"
+            }
+          }
         }
       }
     }
@@ -576,8 +596,7 @@
   "assets": [
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -647,8 +666,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -721,8 +739,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -795,8 +812,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -869,8 +885,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -943,8 +958,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1017,8 +1031,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1091,8 +1104,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1165,8 +1177,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1239,8 +1250,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1313,8 +1323,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1387,8 +1396,7 @@
     },
     {
       "metadata": {
-        "tags": [
-        ]
+        "tags": []
       },
       "sys": {
         "space": {
@@ -1458,6 +1466,225 @@
           }
         }
       }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "5lNacncuGJ8d5LOx6tntvQ",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:07:07.874Z",
+        "updatedAt": "2023-12-24T00:07:44.596Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:07:44.596Z",
+        "firstPublishedAt": "2023-12-24T00:07:44.596Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HooperStore Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/5lNacncuGJ8d5LOx6tntvQ/46f251ea7018aaf5f98274fa365ae83e/HooperStore_Banner.jpg",
+            "details": {
+              "size": 655589,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "HooperStore Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "3tLcuEP4PFsE70gY599Ogv",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:09:13.884Z",
+        "updatedAt": "2023-12-24T00:09:28.323Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:09:28.323Z",
+        "firstPublishedAt": "2023-12-24T00:09:28.323Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Mealnu Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/3tLcuEP4PFsE70gY599Ogv/cb075e76201706edc28dacdd28124aa6/Mealnu_Banner.jpg",
+            "details": {
+              "size": 994727,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "Mealnu Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g6nnyc2v412y"
+          }
+        },
+        "id": "4JGLwDHqC8O38qLGJ6uw8P",
+        "type": "Asset",
+        "createdAt": "2023-12-24T00:09:37.646Z",
+        "updatedAt": "2023-12-24T00:09:49.737Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-12-24T00:09:49.737Z",
+        "firstPublishedAt": "2023-12-24T00:09:49.737Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3ByM34a1VX4BNpKXtFZzjc"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Codetech Banner"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g6nnyc2v412y/4JGLwDHqC8O38qLGJ6uw8P/6c02450263e70b77adf7c6a07a8d9d3a/Codetech_Banner.jpg",
+            "details": {
+              "size": 382623,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "Codetech Banner.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -1507,8 +1734,7 @@
       }
     }
   ],
-  "webhooks": [
-  ],
+  "webhooks": [],
   "roles": [
     {
       "name": "Author",
@@ -1516,9 +1742,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -1534,9 +1758,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -1552,9 +1774,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -1570,9 +1790,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "create"
-          ],
+          "actions": ["create"],
           "constraint": {
             "and": [
               {
@@ -1588,9 +1806,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -1606,9 +1822,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -1624,19 +1838,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -1705,19 +1912,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
@@ -1754,9 +1954,7 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -1772,9 +1970,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "read"
-          ],
+          "actions": ["read"],
           "constraint": {
             "and": [
               {
@@ -1790,9 +1986,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -1815,9 +2009,7 @@
         },
         {
           "effect": "allow",
-          "actions": [
-            "update"
-          ],
+          "actions": ["update"],
           "constraint": {
             "and": [
               {
@@ -1840,19 +2032,12 @@
         }
       ],
       "permissions": {
-        "ContentModel": [
-          "read"
-        ],
-        "Settings": [
-        ],
-        "ContentDelivery": [
-        ],
-        "Environments": [
-        ],
-        "EnvironmentAliases": [
-        ],
-        "Tags": [
-        ]
+        "ContentModel": ["read"],
+        "Settings": [],
+        "ContentDelivery": [],
+        "Environments": [],
+        "EnvironmentAliases": [],
+        "Tags": []
       },
       "sys": {
         "type": "Role",
