@@ -6,6 +6,7 @@ import {
   ModalBody,
   ModalHeader,
   Divider,
+  ModalFooter,
 } from '@nextui-org/react';
 import { TypeProjectFields } from '../../../../../types/contentful';
 import ProjectStack from './ProjectStack';
@@ -24,6 +25,7 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
   return (
     <>
       <Modal
+        scrollBehavior="inside"
         backdrop="blur"
         size={'3xl'}
         isOpen={isOpen}
@@ -39,7 +41,7 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
             <ProjectStack techStack={project.techStack} />
             <p className="text-xs xs:text-sm mt-1">{project.description}</p>
             <Divider />
-            <div className="flex justify-between items-center w-full">
+            <ModalFooter className="flex justify-between items-center w-full">
               <Link
                 href={project.projectUrl}
                 className="flex items-center font-semibold gap-3 group text-specialOrange"
@@ -59,7 +61,7 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
                   />
                 </Link>
               )}
-            </div>
+            </ModalFooter>
           </ModalBody>
         </ModalContent>
       </Modal>
