@@ -21,7 +21,7 @@ const ModalSlider = ({ projectImages }: ModalSliderProps) => {
         disableOnInteraction: false,
       }}
       loop={true}
-      className="mySwiper w-full"
+      className="mySwiper w-full rounded-t-xl"
     >
       {projectImages.map((image, index) => (
         <SwiperSlide className="w-full" key={index}>
@@ -30,7 +30,7 @@ const ModalSlider = ({ projectImages }: ModalSliderProps) => {
             alt={image.fields.title as string}
             height={948}
             width={1920}
-            className="w-full h-auto"
+            className="w-full h-auto rounded-t-xl"
           />
         </SwiperSlide>
       ))}
