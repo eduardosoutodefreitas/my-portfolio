@@ -13,7 +13,6 @@ export default function Header() {
   return (
     <Navbar
       className="bg-transparent py-2 absolute top-0 left-0 right-0"
-      shouldHideOnScroll
       isBlurred={false}
       maxWidth="2xl"
     >
