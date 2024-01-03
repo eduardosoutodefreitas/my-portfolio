@@ -2,42 +2,34 @@ import Link from 'next/link';
 import { MdArrowRightAlt } from 'react-icons/md';
 import { VscGithub } from 'react-icons/vsc';
 import ProjectStack from './ProjectStack';
+import ModalTrigger from './ModalTrigger';
+import { TypeProjectFields } from '../../../../../types/contentful';
 
 interface ProjectInfosProps {
-  title: string;
-  id: string;
-  description: string;
-  repositoryUrl?: string;
-  techStack: string[];
+  project: TypeProjectFields;
 }
-const ProjectInfos = ({
-  title,
-  id,
-  description,
-  repositoryUrl,
-  techStack,
-}: ProjectInfosProps) => {
+const ProjectInfos = ({ project }: ProjectInfosProps) => {
   return (
     <div className="max-w-xl self-center">
       <div className="mb-5 lg:mb-10">
-        <h3 className="font-bold mb-1 text-2xl">{title}</h3>
-        <ProjectStack techStack={techStack} />
-        <p className="line-clamp-5 mt-3">{description}</p>
+        <h3 className="font-bold mb-1 text-2xl">{project.name}</h3>
+        <ProjectStack techStack={project.techStack} />
+        <p className="line-clamp-5 mt-3">{project.description}</p>
       </div>
       <div className="flex justify-between items-center w-full">
-        <Link
-          href={`/projects/${id}`}
-          className="flex items-center gap-3 group font-semibold"
+        <ModalTrigger
+          project={project}
+          extraStyles="cursor-pointer flex items-center gap-3 group font-semibold"
         >
           Ler mais
           <MdArrowRightAlt
             size={22}
             className="group-hover:translate-x-1 transition-all duration-250"
           />
-        </Link>
-        {repositoryUrl && (
+        </ModalTrigger>
+        {project.repositoryUrl && (
           <Link
-            href={repositoryUrl}
+            href={project.repositoryUrl}
             className="flex items-center font-semibold gap-3 group"
           >
             Github

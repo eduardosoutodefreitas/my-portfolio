@@ -1,25 +1,25 @@
 import { Asset } from 'contentful';
 import Image from 'next/image';
-import Link from 'next/link';
+import ModalTrigger from './ModalTrigger';
+import { TypeProjectFields } from '../../../../../types/contentful';
 interface ProjectPictureProps {
-  projectHighlight: Asset;
-  projectUrl: string;
+  project: TypeProjectFields;
 }
 
-const ProjectPicture = ({
-  projectHighlight,
-  projectUrl,
-}: ProjectPictureProps) => {
+const ProjectPicture = ({ project }: ProjectPictureProps) => {
   return (
-    <Link href={projectUrl} className="group w-full md:w-1/2 md:min-w-[400px]">
+    <ModalTrigger
+      project={project}
+      extraStyles="w-full md:w-1/2 md:min-w-[400px]"
+    >
       <Image
-        src={`https:${projectHighlight.fields.file?.url}`}
+        src={`https:${project.projectHighlight.fields.file?.url}`}
         height={948}
         width={1920}
-        className="w-full h-auto rounded-md shadow-md transition-transform duration-250 scale-100 group-hover:scale-[1.01]"
-        alt={projectHighlight.fields.title as string}
+        className="w-full h-auto rounded-md shadow-md"
+        alt={project.projectHighlight.fields.title as string}
       />
-    </Link>
+    </ModalTrigger>
   );
 };
 
