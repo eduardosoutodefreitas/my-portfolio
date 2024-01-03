@@ -9,7 +9,7 @@ const socials: Social[] = [
   },
   {
     name: '@dev_freitas',
-    url: '#',
+    url: 'https://discordapp.com/users/427117743280619532',
     icon: <PiDiscordLogo className="text-2xl xs:text-3xl" />,
   },
   {
