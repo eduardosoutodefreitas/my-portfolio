@@ -15,7 +15,7 @@ const AboutPictures = () => {
         height={1600}
         width={1200}
         alt="second about section picture"
-        src="/assets/images/me-1.jpg"
+        src="/assets/images/me.jpg"
         className="rounded-xl translate-y-8 lg:w-[206px] sm:w-[186px] w-[130px] h-auto"
       />
     </div>
