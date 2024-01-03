@@ -7,7 +7,7 @@ import {
 } from '@nextui-org/react';
 
 import Logo from './Logo';
-import ContactButton from './ContactButton';
+import { IoChatboxEllipses } from 'react-icons/io5';
 
 export default function Header() {
   return (
@@ -22,7 +22,13 @@ export default function Header() {
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem>
-          <ContactButton />
+          <a
+            href="#contact"
+            className="bg-primaryBlack py-2 px-5 rounded-md  text-xs xs:text-sm sm:text-base flex items-center gap-3  hover:bg-specialOrange transition-all duration-250 text-white md:text-lg font-semibold"
+          >
+            <IoChatboxEllipses className="text-base md:text-lg" />
+            Entre em contato!
+          </a>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
